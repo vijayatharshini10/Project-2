@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.dark {
+  background: linear-gradient(to right, #000428, #004e92);
+}
+
+header {
+  padding: 25px;
+  background: rgba(0,0,0,0.3);
+}
+
+button {
+  background: #243b55;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card, .analytics {
+  background: white;
+  color: black;
+  width: 320px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.dark .card, .dark .analytics {
+  background: #1c1c1c;
+  color: white;
+}
+
+select {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+ul {
+  text-align: left;
+  max-height: 150px;
+  overflow-y: auto;
+}
