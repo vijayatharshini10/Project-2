@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SkillSprout MoodScape PRO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🌌 SkillSprout MoodScape PRO</h1>
+  <p>Emotion Intelligence Dashboard</p>
+  <button onclick="toggleTheme()">🌙 Toggle Theme</button>
+  <button onclick="exportPDF()">📄 Export Report</button>
+</header>
+
+<div class="card">
+  <h2>Select Your Mood</h2>
+  <select id="mood">
+    <option value="">Choose Mood</option>
+    <option value="happy">😊 Happy</option>
+    <option value="sad">😔 Sad</option>
+    <option value="focus">🎯 Focused</option>
+    <option value="stress">😤 Stressed</option>
+    <option value="excited">🤩 Excited</option>
+  </select>
+
+  <button onclick="logMood()">Log My Mood</button>
+
+  <div id="result">
+    <h3 id="message"></h3>
+    <p id="music"></p>
+    <p id="challenge"></p>
+  </div>
+</div>
+
+<div class="analytics">
+  <h2>📊 Mood Analytics</h2>
+  <ul id="history"></ul>
+  <p id="streak">🔥 Streak: 0 days</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
